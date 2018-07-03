@@ -1,0 +1,19 @@
+Package: sparklyr2pmml
+Version: 0.1.0
+Date: 2018-07-02
+Type: Package
+License: AGPL-3
+Title: R library for converting Apache Spark ML pipelines to PMML
+Description: This package provides R wrapper classes and functions for
+    the JPMML-SparkML library (https://github.com/jpmml/jpmml-sparkml),
+    which implements the conversion of Apache Spark ML pipelines to PMML.
+Author: Villu Ruusmann <villu.ruusmann@gmail.com>
+Maintainer: Villu Ruusmann <villu.ruusmann@gmail.com>
+URL: https://github.com/jpmml/sparklyr2pmml
+LazyLoad: yes
+NeedsCompilation: no
+Depends:
+    methods,
+    sparklyr
+Suggests:
+    testthat

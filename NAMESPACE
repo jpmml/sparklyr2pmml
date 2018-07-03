@@ -1,0 +1,4 @@
+importFrom("methods", "new")
+importFrom("sparklyr", "invoke", "invoke_new", "spark_dataframe", "spark_jobj")
+
+exportPattern("^[^\\.]")
