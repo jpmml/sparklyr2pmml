@@ -9,12 +9,12 @@ This package provides R wrapper classes and functions for the [JPMML-SparkML](ht
 
 # Prerequisites #
 
-* [Apache Spark](http://spark.apache.org/) 2.0.X, 2.1.X, 2.2.X, 2.3.X or 2.4.X.
+* [Apache Spark](https://spark.apache.org/) 2.0.X, 2.1.X, 2.2.X, 2.3.X or 2.4.X.
 * R 3.3 or newer.
 
 # Installation #
 
-Install from GitHub using the [`devtools` package](http://cran.r-project.org/web/packages/devtools/):
+Install from GitHub using the [`devtools` package](https://cran.r-project.org/web/packages/devtools/):
 
 ```R
 library("devtools")
@@ -74,7 +74,7 @@ buildFile(pmmlBuilder, "DecisionTreeIris.pmml")
 
 # License #
 
-Sparklyr2PMML is dual-licensed under the [GNU Affero General Public License (AGPL) version 3.0](http://www.gnu.org/licenses/agpl-3.0.html), and a commercial license.
+Sparklyr2PMML is dual-licensed under the [GNU Affero General Public License (AGPL) version 3.0](https://www.gnu.org/licenses/agpl-3.0.html), and a commercial license.
 
 # Additional information #
 
