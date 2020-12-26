@@ -31,8 +31,9 @@ Sparklyr2PMML must be paired with JPMML-SparkML based on the following compatibi
 | 2.0.X | `1.1.X` (Archived) | [1.1.23](https://github.com/jpmml/jpmml-sparkml/releases/download/1.1.23/jpmml-sparkml-executable-1.1.23.jar) |
 | 2.1.X | `1.2.X` (Archived) | [1.2.15](https://github.com/jpmml/jpmml-sparkml/releases/download/1.2.15/jpmml-sparkml-executable-1.2.15.jar) |
 | 2.2.X | `1.3.X` (Archived) | [1.3.15](https://github.com/jpmml/jpmml-sparkml/releases/download/1.3.15/jpmml-sparkml-executable-1.3.15.jar) |
-| 2.3.X | `1.4.X` | [1.4.14](https://github.com/jpmml/jpmml-sparkml/releases/download/1.4.14/jpmml-sparkml-executable-1.4.14.jar) |
-| 2.4.X | `master` | [1.5.7](https://github.com/jpmml/jpmml-sparkml/releases/download/1.5.7/jpmml-sparkml-executable-1.5.7.jar) |
+| 2.3.X | `1.4.X` | [1.4.17](https://github.com/jpmml/jpmml-sparkml/releases/download/1.4.17/jpmml-sparkml-executable-1.4.17.jar) |
+| 2.4.X | `1.5.X` | [1.5.10](https://github.com/jpmml/jpmml-sparkml/releases/download/1.5.10/jpmml-sparkml-executable-1.5.10.jar) |
+| 3.0.X | `master` | [1.6.2](https://github.com/jpmml/jpmml-sparkml/releases/download/1.6.2/jpmml-sparkml-executable-1.6.2.jar) |
 
 Adding the JPMML-SparkML uber-JAR file to Sparklyr execution environment:
 
