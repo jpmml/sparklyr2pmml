@@ -9,7 +9,7 @@ This package provides R wrapper classes and functions for the [JPMML-SparkML](ht
 
 # Prerequisites #
 
-* [Apache Spark](https://spark.apache.org/) 2.0.X, 2.1.X, 2.2.X, 2.3.X or 2.4.X.
+* [Apache Spark](https://spark.apache.org/) 2.0.X, 2.1.X, 2.2.X, 2.3.X, 2.4.X or 3.0.X.
 * R 3.3 or newer.
 
 # Installation #
@@ -46,7 +46,7 @@ config[["sparklyr.jars.default"]] = "/path/to/jpmml-sparkml-executable-${version
 sc = spark_connect(master = "local", config = config)
 ```
 
-Fitting an example pipeline model:
+Fitting a Spark ML pipeline:
 
 ```R
 library("dplyr")
@@ -63,7 +63,7 @@ iris_pipeline = ml_pipeline(sc) %>%
 iris_pipeline_model = ml_fit(iris_pipeline, iris_df)
 ```
 
-Exporting the fitted example pipeline model to a PMML file:
+Exporting the fitted Spark ML pipeline to a PMML file:
 
 ```R
 library("sparklyr2pmml")
@@ -75,10 +75,12 @@ buildFile(pmmlBuilder, "DecisionTreeIris.pmml")
 
 # License #
 
-Sparklyr2PMML is dual-licensed under the [GNU Affero General Public License (AGPL) version 3.0](https://www.gnu.org/licenses/agpl-3.0.html), and a commercial license.
+Sparklyr2PMML is licensed under the terms and conditions of the [GNU Affero General Public License, Version 3.0](https://www.gnu.org/licenses/agpl-3.0.html).
+
+If you would like to use Sparklyr2PMML in a proprietary software project, then it is possible to enter into a licensing agreement which makes Sparklyr2PMML available under the terms and conditions of the [BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause) instead.
 
 # Additional information #
 
 Sparklyr2PMML is developed and maintained by Openscoring Ltd, Estonia.
 
-Interested in using JPMML software in your application? Please contact [info@openscoring.io](mailto:info@openscoring.io)
+Interested in using [Java PMML API](https://github.com/jpmml) software in your company? Please contact [info@openscoring.io](mailto:info@openscoring.io)
