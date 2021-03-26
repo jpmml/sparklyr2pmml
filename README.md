@@ -9,7 +9,7 @@ This package provides R wrapper classes and functions for the [JPMML-SparkML](ht
 
 # Prerequisites #
 
-* [Apache Spark](https://spark.apache.org/) 2.0.X, 2.1.X, 2.2.X, 2.3.X, 2.4.X or 3.0.X.
+* [Apache Spark](https://spark.apache.org/) 2.0.X, 2.1.X, 2.2.X, 2.3.X, 2.4.X, 3.0.X or 3.1.X.
 * R 3.3 or newer.
 
 # Installation #
@@ -33,7 +33,8 @@ Sparklyr2PMML must be paired with JPMML-SparkML based on the following compatibi
 | 2.2.X | `1.3.X` (Archived) | [1.3.15](https://github.com/jpmml/jpmml-sparkml/releases/download/1.3.15/jpmml-sparkml-executable-1.3.15.jar) |
 | 2.3.X | `1.4.X` | [1.4.18](https://github.com/jpmml/jpmml-sparkml/releases/download/1.4.18/jpmml-sparkml-executable-1.4.18.jar) |
 | 2.4.X | `1.5.X` | [1.5.11](https://github.com/jpmml/jpmml-sparkml/releases/download/1.5.11/jpmml-sparkml-executable-1.5.11.jar) |
-| 3.0.X | `master` | [1.6.3](https://github.com/jpmml/jpmml-sparkml/releases/download/1.6.3/jpmml-sparkml-executable-1.6.3.jar) |
+| 3.0.X | `1.6.X` | [1.6.3](https://github.com/jpmml/jpmml-sparkml/releases/download/1.6.3/jpmml-sparkml-executable-1.6.3.jar) |
+| 3.1.X | `master` | [1.7.0](https://github.com/jpmml/jpmml-sparkml/releases/download/1.7.0/jpmml-sparkml-executable-1.7.0.jar) |
 
 Adding the JPMML-SparkML uber-JAR file to Sparklyr execution environment:
 
