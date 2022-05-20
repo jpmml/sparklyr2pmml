@@ -1,49 +1,50 @@
 Sparklyr2PMML
 =============
 
-R library for converting Apache Spark ML pipelines to PMML.
+R library for converting [Apache Spark ML](https://spark.apache.org/) pipelines to PMML.
 
 # Features #
 
-This package provides R wrapper classes and functions for the [JPMML-SparkML](https://github.com/jpmml/jpmml-sparkml) library. For the full list of supported Apache Spark ML Estimator and Transformer types, please refer to JPMML-SparkML documentation.
+This package is a thin R wrapper for the [JPMML-SparkML](https://github.com/jpmml/jpmml-sparkml#features) library.
 
 # Prerequisites #
 
-* [Apache Spark](https://spark.apache.org/) 2.0.X, 2.1.X, 2.2.X, 2.3.X, 2.4.X, 3.0.X, 3.1.X or 3.2.X.
+* Apache Spark 2.0.X, 2.1.X, 2.2.X, 2.3.X, 2.4.X, 3.0.X, 3.1.X or 3.2.X.
 * R 3.3 or newer.
 
 # Installation #
 
-Install from GitHub using the [`devtools` package](https://cran.r-project.org/web/packages/devtools/):
+Install from GitHub using the [`devtools`](https://cran.r-project.org/web/packages/devtools/) package:
 
 ```R
 library("devtools")
 
-install_git("git://github.com/jpmml/sparklyr2pmml.git")
+install_github("jpmml/sparklyr2pmml")
 ```
 
 # Configuration and usage #
 
 Sparklyr2PMML must be paired with JPMML-SparkML based on the following compatibility matrix:
 
-| Apache Spark version | JPMML-SparkML development branch | JPMML-SparkML uber-JAR file |
-|----------------------|----------------------------------|-----------------------------|
-| 2.0.X | `1.1.X` (Archived) | [1.1.23](https://github.com/jpmml/jpmml-sparkml/releases/download/1.1.23/jpmml-sparkml-executable-1.1.23.jar) |
-| 2.1.X | `1.2.X` (Archived) | [1.2.15](https://github.com/jpmml/jpmml-sparkml/releases/download/1.2.15/jpmml-sparkml-executable-1.2.15.jar) |
-| 2.2.X | `1.3.X` (Archived) | [1.3.15](https://github.com/jpmml/jpmml-sparkml/releases/download/1.3.15/jpmml-sparkml-executable-1.3.15.jar) |
-| 2.3.X | `1.4.X` (Archived) | [1.4.21](https://github.com/jpmml/jpmml-sparkml/releases/download/1.4.21/jpmml-sparkml-executable-1.4.21.jar) |
-| 2.4.X | `1.5.X` (Archived) | [1.5.14](https://github.com/jpmml/jpmml-sparkml/releases/download/1.5.14/jpmml-sparkml-executable-1.5.14.jar) |
-| 3.0.X | `1.6.X` | [1.6.6](https://github.com/jpmml/jpmml-sparkml/releases/download/1.6.6/jpmml-sparkml-executable-1.6.6.jar) |
-| 3.1.X | `1.7.X` | [1.7.3](https://github.com/jpmml/jpmml-sparkml/releases/download/1.7.3/jpmml-sparkml-executable-1.7.3.jar) |
-| 3.2.X | `master` | [1.8.0](https://github.com/jpmml/jpmml-sparkml/releases/download/1.8.0/jpmml-sparkml-executable-1.8.0.jar) |
+| Apache Spark version | JPMML-SparkML branch | Latest JPMML-SparkML version |
+|----------------------|----------------------|------------------------------|
+| 3.0.X | [`2.0.X`](https://github.com/jpmml/jpmml-sparkml/tree/2.0.X) | 2.0.0 |
+| 3.1.X | [`2.1.X`](https://github.com/jpmml/jpmml-sparkml/tree/2.1.X) | 2.1.0 |
+| 3.2.X | [`master`](https://github.com/jpmml/jpmml-sparkml/tree/master) | 2.2.0 |
 
-Adding the JPMML-SparkML uber-JAR file to Sparklyr execution environment:
+Launch Sparklyr; use the `sparklyr.connect.packages` configuration option to specify the coordinates of relevant JPMML-SparkML modules:
+
+* `org.jpmml:pmml-sparkml:${version}` - Core module.
+* `org.jpmml:pmml-sparkml-lightgbm:${version}` - LightGBM via SynapseML extension module.
+* `org.jpmml:pmml-sparkml-xgboost:${version}` - XGBoost via XGBoost4J-Spark extension module.
+
+Launching core:
 
 ```R
 library("sparklyr")
 
 config = spark_config()
-config[["sparklyr.jars.default"]] = "/path/to/jpmml-sparkml-executable-${version}.jar"
+config[["sparklyr.connect.packages"]] = "org.jpmml:pmml-sparkml:${version}"
 
 sc = spark_connect(master = "local", config = config)
 ```
