@@ -9,7 +9,7 @@ This package is a thin R wrapper for the [JPMML-SparkML](https://github.com/jpmm
 
 # Prerequisites #
 
-* Apache Spark 3.0.X, 3.1.X, 3.2.X, 3.3.X or 3.4.X.
+* Apache Spark 3.0.X, 3.1.X, 3.2.X, 3.3.X, 3.4.X or 3.5.X.
 * R 3.3 or newer.
 
 # Installation #
@@ -28,11 +28,12 @@ Sparklyr2PMML must be paired with JPMML-SparkML based on the following compatibi
 
 | Apache Spark version | JPMML-SparkML branch | Latest JPMML-SparkML version |
 |----------------------|----------------------|------------------------------|
-| 3.0.X | [`2.0.X`](https://github.com/jpmml/jpmml-sparkml/tree/2.0.X) | 2.0.2 |
-| 3.1.X | [`2.1.X`](https://github.com/jpmml/jpmml-sparkml/tree/2.1.X) | 2.1.2 |
-| 3.2.X | [`2.2.X`](https://github.com/jpmml/jpmml-sparkml/tree/2.2.X) | 2.2.2 |
-| 3.3.X | [`2.3.X`](https://github.com/jpmml/jpmml-sparkml/tree/2.3.X) | 2.3.1 |
-| 3.4.X | [`master`](https://github.com/jpmml/jpmml-sparkml/tree/master) | 2.4.0 |
+| 3.0.X | [`2.0.X`](https://github.com/jpmml/jpmml-sparkml/tree/2.0.X) | 2.0.3 |
+| 3.1.X | [`2.1.X`](https://github.com/jpmml/jpmml-sparkml/tree/2.1.X) | 2.1.3 |
+| 3.2.X | [`2.2.X`](https://github.com/jpmml/jpmml-sparkml/tree/2.2.X) | 2.2.3 |
+| 3.3.X | [`2.3.X`](https://github.com/jpmml/jpmml-sparkml/tree/2.3.X) | 2.3.2 |
+| 3.4.X | [`2.4.X`](https://github.com/jpmml/jpmml-sparkml/tree/2.4.X) | 2.4.1 |
+| 3.5.X | [`master`](https://github.com/jpmml/jpmml-sparkml/tree/master) | 2.5.0 |
 
 Launch Sparklyr; use the `sparklyr.connect.packages` configuration option to specify the coordinates of relevant JPMML-SparkML modules:
 
