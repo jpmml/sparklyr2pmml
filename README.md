@@ -9,7 +9,7 @@ This package is a thin R wrapper for the [JPMML-SparkML](https://github.com/jpmm
 
 # Prerequisites #
 
-* Apache Spark 3.0.X, 3.1.X, 3.2.X, 3.3.X, 3.4.X, 3.5.X, 4.0.X or 4.1.X.
+* Apache Spark 3.0.X, 3.1.X, 3.2.X, 3.3.X, 3.4.X, 3.5.X, 4.0.X, 4.1.X or 4.2.X.
 * R 3.3 or newer.
 
 # Installation #
@@ -30,10 +30,11 @@ Active development branches:
 
 | Apache Spark version | JPMML-SparkML branch | Latest JPMML-SparkML version |
 |----------------------|----------------------|------------------------------|
-| 3.4.X | [`3.0.X`](https://github.com/jpmml/jpmml-sparkml/tree/3.0.X) | 3.0.12 |
-| 3.5.X | [`3.1.X`](https://github.com/jpmml/jpmml-sparkml/tree/3.1.X) | 3.1.12 |
-| 4.0.X | [`3.2.X`](https://github.com/jpmml/jpmml-sparkml/tree/3.2.X) | 3.2.11 |
-| 4.1.X | [`master`](https://github.com/jpmml/jpmml-sparkml/tree/master) | 3.3.4 |
+| 3.4.X | [`3.0.X`](https://github.com/jpmml/jpmml-sparkml/tree/3.0.X) | 3.0.13 |
+| 3.5.X | [`3.1.X`](https://github.com/jpmml/jpmml-sparkml/tree/3.1.X) | 3.1.13 |
+| 4.0.X | [`3.2.X`](https://github.com/jpmml/jpmml-sparkml/tree/3.2.X) | 3.2.12 |
+| 4.1.X | [`3.3.X`](https://github.com/jpmml/jpmml-sparkml/tree/3.3.X) | 3.3.5 |
+| 4.2.X | [`master`](https://github.com/jpmml/jpmml-sparkml/tree/master) | 3.4.0 |
 
 Stale development branches:
 
